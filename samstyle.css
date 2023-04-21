@@ -1,0 +1,303 @@
+
+/* my web */
+
+.header{
+text-align: center;
+background-color: lightsalmon;
+margin-top: -1.25%;
+width: 100%;
+}
+
+body ,footer{
+    font-family: Helvetica, Sans-serif, Arial;
+    background-image: url(https://img.freepik.com/premium-photo/natural-marble-pattern-background_1258-22160.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+}
+
+/* click me */
+
+.button1{
+    position:relative;
+    left: -30%;
+    border: 1px white;
+    border-radius: 20px;
+    
+}
+
+.button1 :hover{
+
+    translate:25% 400%;
+  
+}
+    /* or me */
+
+.button2{
+    position:relative;
+    left: -5%;
+    border-color:lightsalmon ;
+}
+
+.button2 :hover{
+    translate:50% 300%;
+}
+
+/* imma headout */
+
+.button3{
+    position:relative;
+    left: 20%;
+    background-color: #ccc;
+    border-radius: 10px;
+}
+
+.button3 :hover{
+  background-color:red;
+  color: beige;
+  cursor: pointer;
+  border: 1px white;
+}
+
+/* dont click */
+
+.button4 {
+    position: relative;
+    left: 10%;
+    visibility:hidden;
+}
+
+.button4 :hover{
+    text-transform:uppercase;
+    color: red;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* socialmedia div */
+
+.socialmedia{
+    position: absolute;
+    background-color:dimgrey;
+    width: 80px;
+    height:fit-content;
+    border-radius: 7px;
+    
+    
+}
+
+/* whatsapp */
+#wpi{
+    width: 50px;
+    height:70px;
+    margin-left: 21%;
+}
+
+#wpi:hover{
+    cursor: pointer;
+}
+
+/* instagram */
+#insi {
+width: 45px;
+height: 45px;
+margin-left: 23%;
+}
+
+#insi:hover{
+    cursor: pointer;
+}
+
+/* facebook */
+
+#fbi{
+    width: 45px;
+height: 45px;
+margin-left: 23%;
+margin-top: 20%;
+}
+
+#fbi:hover{
+    cursor: pointer;
+}
+
+/* sign up button */
+
+.signupbutton{
+position:absolute;
+left: 80%;
+bottom: -10%;
+}
+
+.signupbutton :hover{
+    cursor: pointer;
+    font-size: larger;
+    color: #45a049;
+}
+
+/* buttons positioning */
+button{
+    position: absolute;
+      left: 50%;
+      top: 50%;
+      border-radius: 9px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+      border-color: darkgrey;
+      font-weight: bold;
+}
+
+/* sign up form*/
+
+#signupform{
+        position: absolute;
+        left: 65%;
+        top:30% ;
+        display: none;
+        flex-direction: column;
+        background-color:rgb(48, 63, 63);
+        box-shadow: 0px 0px 10px rgba(116, 109, 109, 0.8);
+        align-items: center;
+        width: 400px;
+        margin: 0 auto;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 9px;
+        
+      }
+      
+      label {
+        color: #ddd;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 20px;
+      }
+      
+      input[type="submit"] {
+        background-color: #283aa1;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type="submit"]:hover {
+        background-color: #243281;
+
+      }
+       
+      /* Siraj Mattar */
+
+      .siraj{
+        position: absolute;
+        width: 50%;
+        height: fit-content;
+        left:10% ;
+        top: 30%;
+        background-color: white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+      }
+
+      .siraj :hover{
+        box-shadow:0px 0px 10px rgba(0, 0, 0, 0.7) ;
+        font-size: large;
+      }
+
+      /* Alaa Mattar */
+
+      .alaa{
+        position: absolute;
+        width: 50%;
+        left:10% ;
+        top: 60%;
+        background-color:white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+      }
+
+      .alaa :hover{
+        box-shadow:0px 0px 10px rgba(0, 0, 0, 0.7) ;
+        font-size: large;
+      }
+
+      /* Jad Mattar */
+
+      .jad{
+        position: absolute;
+        width: 50%;
+        left:10% ;
+        top: 90%;
+        background-color: white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+      }
+
+      .jad :hover{
+        box-shadow:0px 0px 10px rgba(0, 0, 0, 0.7) ;
+        font-size: large;
+      }
+
+      /* Rawad Mattar */
+
+      .rawad{
+        position: absolute;
+        width: 50%;
+        left:10% ;
+        top: 120%;
+        background-color: white;
+        font-weight: bold;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: medium;
+      }
+
+      .rawad :hover{
+        box-shadow:0px 0px 10px rgba(0, 0, 0, 0.7) ;
+        font-size: large;
+      }
+
+    .siraj , .alaa , .rawad , .jad {
+        border-radius: 10px;
+        font-family: Helvetica;
+    }
+
+
+/* footer */
+
+.footer{
+  position: absolute;
+  background-color:rgba(255, 255, 255, 0.3);
+  top:160%;
+  height: fit-content;
+  width: 100%;
+  pointer-events: none;
+  
+}
+
+#dani, #rights{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
