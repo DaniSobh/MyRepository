@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<title>My Website</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  href="samstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="container">
+
+      <!-- MY WEBSITE -->
+
+      <div class="header">
+       <h1>MY WEBSITE</h1>
+      </div>
+
+    <!-- buttons -->
+
+    <div class="btnclass">
+
+<!-- click me -->
+
+<div class="button1">
+<button>CLICK ME</button>
+</div>
+
+<!-- or me -->
+
+<div class="button2">
+<button>OR ME</button>
+</div>
+
+<!-- imma headout -->
+
+<div class="button3">
+    <button onclick="mybutton3()" id="but3">imma headout</button>
+</div>
+
+<!-- im back button -->
+
+<div class="button4">
+    <button onclick="mybutton4()" id="but4">don't click</button>
+</div>
+
+</div>
+
+<!-- social media -->
+
+<div class="socialmedia">
+
+    <!-- whatsapp -->
+
+    <img src="https://www.logo.wine/a/logo/WhatsApp/WhatsApp-Logo.wine.svg" onclick="mybutton5()" id="wpi">
+
+    <!-- instagram -->
+
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" 
+    onclick="mybutton6()"
+    id="insi">
+
+    <!-- facebook -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/2048px-2021_Facebook_icon.svg.png"
+    onclick="mybutton7()" id="fbi">
+</div>
+
+<!-- sign up button -->
+<div class="signupbutton">
+<button onclick="signupFunction()" id="signup">Sign up!</button>
+</div>
+
+<!-- sign up page -->
+
+<form class="signupform" id="signupform">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" minlength="8" required><br><br>
+
+    <label for="confirm-password">Confirm Password:</label>
+    <input type="password" id="confirm-password" name="confirm-password" minlength="8" required><br><br>
+
+    <input type="submit" value="Sign Up">
+  </form>
+  
+
+  <!-- par1 -->
+
+  <div class="par1">
+    <p>-Lipsum ipsum <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet pretium lacus, ac accumsan tellus. Aenean nulla neque,
+       condimentum vel sem eget,tristique maximus dui. Integer vel iaculis mi, nec fermentum risus. Fusce eu est ut dolor porta fermentum. 
+      Curabitur molestie metus sed eleifend lobortis. Sed nec mi vel ante vulputate eleifend blandit sed lorem. </p>
+  </div>
+
+  <!-- par2 -->
+  <div class="par2">
+    <p>-Lipsum ipsum <br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet pretium lacus, ac accumsan tellus.
+      Aenean nulla neque, condimentum vel sem eget,
+      tristique maximus dui. Integer vel iaculis mi, nec fermentum risus. Fusce eu est ut dolor porta fermentum.
+       Curabitur molestie metus sed eleifend lobortis.
+      Sed nec mi vel ante vulputate eleifend blandit sed lorem.</p>
+  </div>
+
+  <!-- par3 -->
+  <div class="par3"> 
+  <p>-Lipsum ipsum<br>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet pretium lacus, ac accumsan tellus.
+     Aenean nulla neque, condimentum vel sem eget, tristique maximus dui. Integer vel iaculis mi, nec fermentum risus. 
+     Fusce eu est ut dolor porta fermentum.
+     Curabitur molestie metus sed eleifend lobortis. Sed nec mi vel ante vulputate eleifend blandit sed lorem.</p>
+  </div>
+
+  <!-- par4 -->
+  <div class="par4">
+    <p>-Lipsum ipsum<br>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis sit amet pretium lacus, ac accumsan tellus.
+       Aenean nulla neque, condimentum vel sem eget, tristique maximus dui. Integer vel iaculis mi, nec fermentum risus. 
+       Fusce eu est ut dolor porta fermentum.
+       Curabitur molestie metus sed eleifend lobortis. Sed nec mi vel ante vulputate eleifend blandit sed lorem.</p>
+  </div>
+
+  <!-- joining the shelle -->
+  <div class="signuptojoin" id="join">
+    <p>Sign up to join<br> us!</p>
+  </div>
+
+
+<!-- search field -->
+
+<form>
+  <div class="search-container">
+    <input type="search" id="search" name="search" placeholder="Search...">
+    <button type="submit" id="searchbutton"><i class="fa fa-search"></i></button>
+  </div>
+</form>
+
+<!-- footer -->
+<div class="footer">
+    <p id="dani">Dani Sobh</p>
+    <p id="rights">All rights reserved</p>
+</div>
+
+</div>
+
+</body>
+<script src="javascript.js"></script>
+</html>
