@@ -117,6 +117,16 @@ html{
         right: 5%;
         width: 76px;
         height: 76px;
+        animation: rotate 7s linear infinite;
+      }
+
+      @keyframes rotate {
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
       }
 
       /* footer */
@@ -145,6 +155,7 @@ html{
         font-size: large;
         background: #e7e6f1;
         border: 0;
+        transition: 0.3s ease-in;
       }
 
       .order_products:hover{
@@ -251,6 +262,164 @@ html{
       button[type="submit"] i {
         margin-right: 5px;
       }
+
+
+
+
+      
+
+
+      @media screen and (max-width: 480px) {
+
+        
+
+        
+        /* Reset body margin */
+        body {
+          margin: 0;
+          width: 100%;
+          height: max-content;
+        }
+      
+        /* Navbar */
+        header {
+          position: fixed;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 999;
+          height: 50px;
+          background-color: #000;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 10px;
+        }
+      
+        nav ul {
+          display: flex;
+          list-style: none;
+          margin: 0;
+          padding: 0;
+        }
+      
+        nav ul li {
+          margin: 0 10px;
+        }
+      
+        nav ul li a {
+          color: #fff;
+          text-decoration: none;
+          font-size: 14px;
+          transition: 0.4s ease;
+        }
+      
+        nav ul li a:hover {
+          color: #6756ff;
+          font-size: 15px;
+        }
+      
+        /* Search field */
+        .searchfield {
+          position: absolute;
+          top: 15%;
+          left: 10%;
+          display: flex;
+          border-radius: 30px;
+          
+        }
+      
+        .searchfield input[type="text"] {
+          
+          border: 0px solid #ccc;
+          border-radius: 15px;
+          font-size: 16px;
+          width: 70%;
+          
+          
+        }
+      
+        .searchfield button[type="submit"] {
+          padding: 10px;
+          margin-left: 5px;
+          background-color: #007bff;
+          color: #fff;
+          border: none;
+          border-radius: 15px;
+          font-size: 16px;
+          cursor: pointer;
+        }
+      
+        /* The Best Text */
+        #thebest {
+          font-size: 27px;
+          text-align: center;
+          margin: 20px;
+          font-family: '! PEPSI !', sans-serif;
+          background: linear-gradient(to right, #2a09a0, #e7e6f1);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+        }
+      
+        /* Pepsi Images */
+
+        #pepsi_image{
+          display: none;
+          position: absolute;
+          left: 10%;
+          height: 100vh;
+          opacity: 0.7;
+
+        }
+
+        #pepsi_image2{
+          display: none;
+        }
+      
+        /* Buttons */
+        .order_products {
+          position: absolute;
+          left:0% ;
+          width: 100%;
+          height: 70px;
+          font-size: larger;
+          background: #b1ace7;
+          border: 0;
+          transition: 0.3s ease-in;
+          
+        }
+      
+        .order_products:hover {
+          cursor: pointer;
+          background-color: rgb(164, 179, 241);
+          color: white;
+        }
+
+        #pepsi-icon{
+          position: absolute;
+          top: 24%;
+          right: 1%;
+          height: 30px;
+          width: 30px;
+        }
+
+        .socialmedia_button{        
+          height: 40%;
+          width: 40%;
+        }
+
+        .socialmedia_button:hover{
+          height: 50%;
+          width: 50%;
+        }
+
+        .socialmedia_div{
+          position: absolute;
+          right: 25%;
+        }
+      }
+      
       
       
       
