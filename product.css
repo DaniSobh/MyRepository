@@ -352,7 +352,7 @@ html{
       
         /* The Best Text */
         #thebest {
-          font-size: 27px;
+          font-size: 30px;
           text-align: center;
           margin: 20px;
           font-family: '! PEPSI !', sans-serif;
@@ -382,8 +382,8 @@ html{
           position: absolute;
           left:0% ;
           width: 100%;
-          height: 70px;
-          font-size: larger;
+          height: 80px;
+          font-size: 30px;
           background: #b1ace7;
           border: 0;
           transition: 0.3s ease-in;
@@ -399,7 +399,7 @@ html{
         #pepsi-icon{
           position: absolute;
           top: 24%;
-          right: 1%;
+          right: 5%;
           height: 30px;
           width: 30px;
         }
