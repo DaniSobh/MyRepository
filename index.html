@@ -1,77 +1,55 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My Product</title>
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="product.css">
-    <link href="https://fonts.cdnfonts.com/css/pepsi" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="CDH.css">  
 </head>
 <body>
+    <!-- NAVIGATION BAR -->
+    <div class="navbar">
+    <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+    </ul>
+    </div>
 
-    <!-- navbar -->
+    <!-- LOGO -->
 
-    <header>
-        <nav>
-          <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li class="dropdown">
-                <a href="#" class="contact-us" id="contact_us" onclick="contactus()">Contact Us <i class="fas fa-caret-down"></i></a>
-              </li>
-          </ul>
-          
-          <!-- pepsi icon -->
+    <img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Logos\logo1.png" alt="Logo" class="cdh_logo">
 
-        <img src="https://seeklogo.com/images/P/pepsi-logo-94D7DEF922-seeklogo.com.png" id="pepsi-icon">
-        </nav>
-      </header>
 
-      <!-- search field -->
+    <!-- CAREER PATH IMAGE -->
 
-      <div class="searchfield">
-        <input type="text" placeholder="Search...">
-        <button type="submit"><i class="fa fa-search"></i></button>
-      </div>
+    <img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\WelcomePage.jpg" alt="Career path" class="career_image">
 
-      <!-- the best -->
+    <!-- TEXT -->
+    <p class="welcomepage_text">Your Map <br> Towards Success</p>
 
-      <p id="thebest">Chosen as the BEST<br>Among the REST!</p>
+    <!-- GET STARTED BUTTON -->
 
-    <!-- pepsi image -->
+    <button class="getstarted_button">Get Started ></button>
 
-    <img src="https://popmenucloud.com/cdn-cgi/image/width%3D1200%2Cheight%3D1200%2Cfit%3Dscale-down%2Cformat%3Dauto%2Cquality%3D60/tfxzsylp/6074068f-3526-4f2f-b545-82430a7bc400.png" 
-    id="pepsi_image2">
-<img src="https://www.pepsi.com/en-us/uploads/images/twil-can.png" id="pepsi_image">
+    <!-- MENU BUTTON -->
 
-<!-- products button -->
+    <div class="menu-button" onclick="toggleMenu()">
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+        <div class="menu-icon"></div>
+    </div>
 
-<button id="view_products" class="order_products">View Products</button>
+    <!-- Menu Items (hidden by default) -->
 
-<!-- order now button -->
+    <ul class="menu-items" id="menuItems">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#contact">Contact Us</a></li>
+        <li><a href="#services">Our Services</a></li>
+    </ul>
 
-<button id="order_now" class="order_products">Order Now!</button>
-
-<!-- social media -->
-
-<div class="socialmedia_div">
-
-<!-- whatsapp -->
-<img src="https://www.shareicon.net/data/512x512/2015/10/02/110862_whatsapp_512x512.png" id="whatsapp" class="socialmedia_button">
-
-<!-- facebook -->
-<img src="https://www.iconpacks.net/icons/2/free-facebook-icon-2869-thumb.png" id="facebook" class="socialmedia_button">
-
-<!-- instagram -->
-<img src="https://cdn-icons-png.flaticon.com/512/1077/1077042.png" id="instagram" class="socialmedia_button">
-
-</div>
-
-<!-- footer -->
-<div class="footer">
-  <p id="footer">pepsi co. <br> All rights reserved.</p>
-</div>
-
-<script src="product.js"></script>
+    <script src="CDH.js"></script>
 </body>
-</html>
+</html>    
