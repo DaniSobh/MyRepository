@@ -1,424 +1,270 @@
 
-@import url('https://fonts.cdnfonts.com/css/pepsi');
+.navbar{
+    position: absolute;
+    right: 5%;
+    bottom: 83%;
+    
+}
 
-html{
-        height: 150%;
-        max-width: 100%;
-        background: linear-gradient(to bottom, #3929cf, #f72424, white) no-repeat;
-      }
-      
-      /* navbar */
-      
-      header {
-        background-color: #312727;
-        height: 80px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 999;
-      }
-      
-      nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 100%;
-        font-family: '! PEPSI !', sans-serif;
-                                                
-      }
-      
-      ul {
-        display: flex;
-        list-style: none;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: black;
+    font-family: Sitka, serif;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px 30px; /* Reduced padding to shorten the line */
+    text-decoration: none;
+    position: relative; /* Added relative positioning */
+}
+
+li:not(:last-child) a::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    height: 30%;
+    border-right: 1px solid #3D32C9;
+    transform: translateY(-50%); /* Vertically center the line */
+}
+
+
+/* LOGO */
+
+.cdh_logo{
+    position: absolute;
+    bottom: 45%;
+    left: 5%;
+    width: 20%;
+    
+}
+
+/* IMAGE */
+
+.career_image{
+    position: absolute;
+    bottom: 17%;
+    right: 8%;
+    width: 35%;
+    height: 400px;
+}
+
+/* WELCOMEPAGE TEXT */
+
+.welcomepage_text{
+    position: absolute;
+    left: 5%;
+    bottom: 28%;
+    font-size: 70px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* get started button */
+
+.getstarted_button{
+    position: absolute;
+    left: 12%;
+    bottom: 15%;
+    width: 200px;
+    height: 78px;
+    background-color:#3D32C9;
+    border-radius: 15px;
+    font-size: 25px;
+    color: white;
+    border-width: 0;
+    transition: 0.3s ease;
+}
+
+.getstarted_button:hover{
+    cursor: pointer;
+    background-color:#3027a7;
+}
+
+/* MENU BUTTON HIDDEN */
+.menu-button {
+    display: none;
+    padding: 5px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+    width: 40px;
+    border-radius: 10px;
+}
+
+/* Style for the hamburger icon */
+.menu-icon {
+    width: 30px;
+    height: 3px;
+    background-color: white;
+    margin: 5px auto;
+}
+
+/* Style for the menu items */
+.menu-items {
+    display: none; /* Hide the menu items by default */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+.menu-items li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+
+@media (max-width: 480px){
+
+    body, ul {
         margin: 0;
         padding: 0;
       }
       
+      /* Navigation Bar */
+      .navbar {
+        position: static;
+        right: -5%;
+        bottom: 83%;
+      }
+      
+      .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        text-align: center; /* Center the navigation items */
+      }
+      
       li {
-        margin: 0 30px;
+        display: inline-block; /* Instead of floating, use inline-block to prevent stacking */
       }
       
-      a {
-        color: #fff;
+      li a {
+        display: block;
+        color: black;
+        font-family: Sitka, serif;
+        font-size: 20px;
+        font-weight: bold;
         text-decoration: none;
-        font-size: 18px;
-        transition: 0.4s ease;
+        position: relative;
+        padding: 10px 20px; /* Reduced padding for better mobile experience */
       }
       
-      a:hover {
-        transition: 0.4s;
-        color: #6756ff;
-        font-size: larger;
+      li:not(:last-child) a::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: -10px; 
+        height: 30%;
+        border-right: 1px solid #3D32C9;
+        transform: translateY(-50%);
       }
-
-      /* dropdown contact us */
-
-      .dropdown-menu{
+      
+      /* Logo */
+      .cdh_logo {
+        position: absolute;
+        bottom: 15%;
+        left: 5%;
+        width: 40%; /* Increased the width for better visibility on small screens */
+        max-width: 200px; /* Added a maximum width to prevent the logo from becoming too large */
+      }
+      
+      /* Career Path Image */
+      .career_image {
+        position: absolute;
+        bottom: 7%;
+        right: 5%; /* Adjusted the right position for better alignment */
+        width: 80%; /* Increased the width for better visibility on small screens */
+        max-width: 400px; /* Added a maximum width to prevent the image from becoming too large */
+        height: auto; /* Allow the height to adjust automatically with the width */
+      }
+      
+      /* Text */
+      .welcomepage_text {
+        position: absolute;
+        left: 5%;
+        bottom: 17%; /* Adjusted the bottom position for better alignment */
+        font-size: 40px; /* Reduced the font size for better visibility on small screens */
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      
+      /* Get Started Button */
+      .getstarted_button {
+        position: absolute;
+        left: 5%;
+        bottom: 5%; 
+        width: 80%; 
+        max-width: 300px; 
+        height: 78px;
+        background-color: #3D32C9;
+        border-radius: 15px;
+        font-size: 25px;
+        color: white;
+        border-width: 0;
+        transition: 0.3s ease;
+      }
+      
+      /* MENU BUTTON */
+      .menu-button{
+        top: 5%;
+        display: block;
+        position: absolute;
+        right: 5%;
+      }
+      
+      .navbar{
         display: none;
       }
 
-      .contact-us .dropdown-menu :hover {
-        display: flex;
-        flex-direction: column;
-      }
+      /* logo */
 
-      /* pepsi image */
-
-      #pepsi_image{
+      .cdh_logo{
         position: absolute;
-        width: 550px;
-        height: 550px;
-        left: -3%;
-        bottom: -40%;
-        transition: 0.4s;
+        top: -20%; 
       }
 
-      #pepsi_image:hover{
-        transition: 0.4s ease-in-out;
-        width: 600px;
-        height: 600px;
-      }
+      /* CAREER IMAGE */
 
-      #pepsi_image2{
+      .career_image{
         position: absolute;
-        width: 950px;
-        height: 600px;
-        bottom: -50%;
-        transition: 0.4s;
-        left: 1%;
-      }
-
-      #pepsi_image2:hover{
-        transition: 0.4s ease-in-out;
-        width: 1000px;
-        height: 650px;
-      }
-
-      /* the best text */
-      
-      #thebest{
-        font-size: 50px;
-        position: absolute;
-        top: 30%;
-        right: 15%;
-        font-family: '! PEPSI !', sans-serif;
-        background: linear-gradient(to right, #2a09a0, #e7e6f1);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
-      }
-
-      /* pepsi icon */
-
-      #pepsi-icon{
-        position: absolute;
-        top: 1%;
-        right: 5%;
-        width: 76px;
-        height: 76px;
-        animation: rotate 7s linear infinite;
-      }
-
-      @keyframes rotate {
-        0% {
-          transform: rotate(0deg);
-        }
-        100% {
-          transform: rotate(360deg);
-        }
-      }
-
-      /* footer */
-
-      .footer{
-      position: absolute;
-      width: 100%;
-      height: fit-content;
-      background: linear-gradient(to bottom, #7e7d80, #2d2d2e);
-      bottom: -50%;
-      }
-
-      #footer{
-        color: #e7e6f1;
-        text-align: center;
-        font-family: '! PEPSI !', sans-serif;
-      }
-      
-
-      /* 2 buttons */
-
-      .order_products{
-        position: absolute;
-        width: 230px;
-        height: 85px;
-        font-size: large;
-        background: #e7e6f1;
-        border: 0;
-        transition: 0.3s ease-in;
-      }
-
-      .order_products:hover{
-        transition: 0.3s ease-in;
-        cursor: pointer;
-        background-color:rgb(62, 94, 238);
-        color: white;
-
-      }
-
-      /* products button */
-
-      #view_products{
-        top: 80%;
-        right: 30%;
-      }
-
-      /* order now button */
-
-      #order_now{
-       top: 100%;
-       right: 30%;
-      }
-
-      /* social media */
-
-      .socialmedia_div{
-        display: flex;
-        flex-direction: row;
-        position: absolute;
-        bottom: -40%;
-        right: 15%;
-        height: 60px;
-      }
-      
-      .socialmedia_button{
-        height: 35px;
-        width: 35px;
-        transition: 0.3s ease;
-      }
-
-      .socialmedia_button:hover{
-        cursor: pointer;
-        height: 45px;
-        width: 45px;
-        transition: 0.3s ease;
-      }
-
-      /* whatsapp */
-
-      #whatsapp{
-        margin-right: 40px;
-      }
-      
-
-      /* facebook */
-
-      #facebook{
-        margin-right: 40px;
-      }
-
-      /* search field */
-
-      .searchfield {
-        position: absolute;
-        top: 20%;
-        left: 15%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-      
-      input[type="text"] {
         padding: 10px;
-        border: 0px solid #ccc;
-        border-radius: 15px;
-        font-size: 16px;
-        width: 300px;
-        max-width: 100%;
-        box-sizing: border-box;
-        outline: none;
+        top: 18%;
+        right: 10%;
       }
-      
-      input[type="text"]:focus {
-        border-color: #515558;
-        box-shadow: 0 0 5px #515558;
+       
+      /* WELCOME TEXT */
+
+      .welcomepage_text{
+        position: absolute;
+        top: 60%;
       }
 
-      button[type="submit"] {
-        padding: 10px;
-        margin-left: 10px;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 5px;
-        font-size: 16px;
-        cursor: pointer;
-      }
-      
-      button[type="submit"]:hover {
-        background-color: #0069d9;
-      }
-      
-      button[type="submit"] i {
-        margin-right: 5px;
-      }
+      /* GET STARTED BUTTON */
 
-
-
-
-      
-
-
-      @media screen and (max-width: 480px) {
-
+      .getstarted_button{
+        position: absolute;
+        top: 110%;
+       
+        width: 200px;
+        left: 19%;
         
-
-        
-        /* Reset body margin */
-        body {
-          margin: 0;
-          width: 100%;
-          height: max-content;
-        }
-      
-        /* Navbar */
-        header {
-          position: fixed;
-          top: 0;
-          left: 0;
-          right: 0;
-          z-index: 999;
-          height: 50px;
-          background-color: #000;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          padding: 0 10px;
-        }
-      
-        nav ul {
-          display: flex;
-          list-style: none;
-          margin: 0;
-          padding: 0;
-        }
-      
-        nav ul li {
-          margin: 0 10px;
-        }
-      
-        nav ul li a {
-          color: #fff;
-          text-decoration: none;
-          font-size: 14px;
-          transition: 0.4s ease;
-        }
-      
-        nav ul li a:hover {
-          color: #6756ff;
-          font-size: 15px;
-        }
-      
-        /* Search field */
-        .searchfield {
-          position: absolute;
-          top: 15%;
-          left: 10%;
-          display: flex;
-          border-radius: 30px;
-          
-        }
-      
-        .searchfield input[type="text"] {
-          
-          border: 0px solid #ccc;
-          border-radius: 15px;
-          font-size: 16px;
-          width: 70%;
-          
-          
-        }
-      
-        .searchfield button[type="submit"] {
-          padding: 10px;
-          margin-left: 5px;
-          background-color: #007bff;
-          color: #fff;
-          border: none;
-          border-radius: 15px;
-          font-size: 16px;
-          cursor: pointer;
-        }
-      
-        /* The Best Text */
-        #thebest {
-          font-size: 30px;
-          text-align: center;
-          margin: 20px;
-          font-family: '! PEPSI !', sans-serif;
-          background: linear-gradient(to right, #2a09a0, #e7e6f1);
-          -webkit-background-clip: text;
-          -webkit-text-fill-color: transparent;
-          background-clip: text;
-        }
-      
-        /* Pepsi Images */
-
-        #pepsi_image{
-          display: none;
-          position: absolute;
-          left: 10%;
-          height: 100vh;
-          opacity: 0.7;
-
-        }
-
-        #pepsi_image2{
-          display: none;
-        }
-      
-        /* Buttons */
-        .order_products {
-          position: absolute;
-          left:0% ;
-          width: 100%;
-          height: 80px;
-          font-size: 30px;
-          background: #b1ace7;
-          border: 0;
-          transition: 0.3s ease-in;
-          
-        }
-      
-        .order_products:hover {
-          cursor: pointer;
-          background-color: rgb(164, 179, 241);
-          color: white;
-        }
-
-        #pepsi-icon{
-          position: absolute;
-          top: 24%;
-          right: 5%;
-          height: 30px;
-          width: 30px;
-        }
-
-        .socialmedia_button{        
-          height: 40%;
-          width: 40%;
-        }
-
-        .socialmedia_button:hover{
-          height: 50%;
-          width: 50%;
-        }
-
-        .socialmedia_div{
-          position: absolute;
-          right: 25%;
-        }
       }
+}
       
       
       
