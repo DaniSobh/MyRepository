@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Templates</title>
+    <link rel="stylesheet" href="CDH.css"> 
+    
+</head>
+
+<body>
+    <div class="cv_header">
+    <h1>Explore CV Templates</h1>
+    <p>Choose from a variety of professionally designed CV templates to make a standout impression.</p>
+    </div>
+    <div class="container">
+       
+    <div class="template">
+        <img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\template1.jpg" alt="Template 1">
+        <div class="template-details">
+        <h2>Template 1</h2>
+        <p>A clean and modern CV template with a focus on your skills and experience.</p>
+        <a href="download/template1.docx">Download DOCX</a>
+        </div>
+    </div>
+   
+    <div class="template">
+        <img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\template2.jpg" alt="Template 2">
+        <div class="template-details">
+        <h2>Template 2</h2>
+        <p>An elegant and professional CV template with a timeless design.</p>
+        <a href="download/template2.docx">Download DOCX</a>
+        </div>  
+    </div>
+    <div class="template">
+        <img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\template3.webp" alt="Template 2">
+        <div class="template-details">
+        <h2>Template 3</h2>
+        <p>A classic resume design.</p>
+        <a href="download/template2.docx">Download DOCX</a>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="footer" style="bottom: -450%;">
+        <p>&copy; 2023 Career Development Hub</p>
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-whatsapp"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+
+      
+      <!-- CV SLIDE -->
+
+      <div class="cv_types"><p>Types of Resume:</p></div>
+
+      <!-- CHRONOLOGICAL CV -->
+
+      <div class="cv_container">
+        
+        <p>Chronological CV Templates</p>  
+
+        <i class="fa-solid fa-question" id="questionmark1" style="color: #3d32c9;"></i>
+
+        <div class="chronotext"> <p>A chronological resume lists your work experiences and achievements starting from the current or most
+           recent one, and following up with previous jobs below. </p></div>
+
+        <div id="first3">
+         <div class="cv_slide"> <img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\template3.webp" alt="bla"></div>
+         <div class="cv_slide"><img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\template2.jpg"></div>
+         <div class="cv_slide"><img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\template1.jpg"></div>
+         </div>
+
+         <div id="second3">
+         <div class="cv_slide"><img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\chronocv1.png"></div>
+         <div class="cv_slide"> <img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\chronocv2.png" alt="bla"></div>
+         <div class="cv_slide"><img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\chronocv3.webp"></div>
+         </div>
+
+         <button id="nextcv"><i class="fa-solid fa-circle-chevron-right fa-shake" style="color: #3d32c9;"></i></button>
+         <button id="prevcv"><i class="fa-solid fa-circle-chevron-left fa-shake" style="color: #3d32c9;"></i></button>
+      </div>
+
+      <!-- COMBINATION RESUME -->
+      
+      <div class="combcv">
+
+        <p>Combination Resume Templates</p>
+
+        <i class="fa-solid fa-question" id="questionmark2" style="color: #3d32c9;"></i>
+
+        <div class="combtext"><p>A combination resume is a type of resume format that combines elements from both the chronological 
+          and functional resume formats. It highlights an individual's skills, qualifications, and accomplishments.</p></div>
+
+        <div id="first3comb">
+            <div class="comb_slide"> <img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\combcv1.png" alt="bla"></div>
+            <div class="comb_slide"><img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\combcv2.jpg"></div>
+            <div class="comb_slide"><img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\combcv3.png"></div>
+            </div>
+   
+            <div id="second3comb">
+            <div class="comb_slide"><img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\chronocv1.png"></div>
+            <div class="comb_slide"> <img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\chronocv2.png" alt="bla"></div>
+            <div class="comb_slide"><img src="C:\Users\danis\OneDrive\Desktop\Senior Project\Images\chronocv3.webp"></div>
+            </div>
+   
+            <button id="nextcomb"><i class="fa-solid fa-circle-chevron-right fa-shake" style="color: #3d32c9;"></i></button>
+            <button id="prevcomb"><i class="fa-solid fa-circle-chevron-left fa-shake" style="color: #3d32c9;"></i></button>
+         </div>
+      </div>
+
+    
+
+      <script>
+
+        //for chronological
+
+        const nextCvButton = document.getElementById('nextcv');
+        const prevCvButton = document.getElementById('prevcv');
+        const first3 = document.getElementById('first3');
+        const second3 = document.getElementById('second3');
+
+        // Initially hide the second set of divs
+        second3.classList.add('hidden');
+
+        nextCvButton.addEventListener('click', () => {
+        first3.classList.add('hidden');
+        second3.classList.remove('hidden');
+
+        prevCvButton.style.display = 'flex';
+        nextCvButton.style.display = 'none';
+        });
+
+        prevCvButton.addEventListener('click', () => {
+        first3.classList.remove('hidden');
+        second3.classList.add('hidden');
+
+        nextCvButton.style.display = 'flex';
+        prevCvButton.style.display = 'none';
+        });
+
+        //for combination
+
+        const nextcombination = document.getElementById('nextcomb');
+        const prevcombination = document.getElementById('prevcomb');
+        const first3comb = document.getElementById('first3comb');
+        const second3comb = document.getElementById('second3comb');
+
+        // Initially hide the second set of divs
+        second3comb.classList.add('hidden');
+
+        nextcombination.addEventListener('click', () => {
+        first3comb.classList.add('hidden');
+        second3comb.classList.remove('hidden');
+
+        prevcombination.style.display = 'flex';
+        nextcombination.style.display = 'none';
+        });
+
+        prevcombination.addEventListener('click', () => {
+        first3comb.classList.remove('hidden');
+        second3comb.classList.add('hidden');
+
+        nextcombination.style.display = 'flex';
+        prevcombination.style.display = 'none';
+        });
+
+        //cv types animation
+
+        const cvTypesElement = document.querySelector('.cv_types');
+  let animationTriggered = false;
+
+  function isElementInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  }
+
+  function animateCVTypes() {
+    if (!animationTriggered && isElementInViewport(cvTypesElement)) {
+      cvTypesElement.style.animation = 'slideIn 1s ease-in-out forwards';
+      animationTriggered = true;
+    }
+  }
+
+  window.addEventListener('scroll', animateCVTypes);
+
+      </script>
+
+      <script src="https://kit.fontawesome.com/cd33aee369.js" crossorigin="anonymous"></script>
+      
+</body>
+</html>
